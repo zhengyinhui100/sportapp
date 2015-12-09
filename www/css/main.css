@@ -1,0 +1,310 @@
+.page-bg {
+  background: #5A5A5A;
+  background-size: cover;
+}
+.s-main-frame {
+  position: relative;
+  min-height: 100%;
+}
+.m-module {
+  background: #fff;
+  min-height: 100%;
+}
+.m-module-gray {
+  background-color: #eee;
+}
+.m-module-content {
+  padding-top: 2.75em;
+}
+.m-module-content.m-padding-we {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.m-module-content.m-padding-top {
+  padding-top: 3.125em;
+}
+.m-module-content.m-padding-bottom {
+  padding-bottom: 2em;
+}
+.m-module-content.m-padding-both {
+  padding-left: 0.625em;
+  padding-right: 0.625em;
+  padding-top: 3.125em;
+  padding-bottom: 2em;
+}
+.m-module-content.m-padding-ns {
+  padding-top: 3.5em;
+  padding-bottom: 2em;
+  padding-left: 0;
+  padding-right: 0;
+}
+.m-module-content.m-padding-ns-more {
+  padding-top: 4.625em;
+  padding-bottom: 2em;
+}
+.m-module-content.m-padding-both-more {
+  padding-top: 4.625em;
+  padding-bottom: 2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.has-footer .m-module-content {
+  padding-bottom: 2.875em;
+}
+.has-footer .m-module-content.m-padding-bottom {
+  padding-bottom: 4.875em;
+}
+.has-footer .m-module-content.m-padding-both {
+  padding-bottom: 4.875em;
+}
+.hui-ios .m-module-content {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.main-footer-tbar .hui-tab {
+  font-size: 0.813em;
+}
+.hui-pc.main {
+  width: 50em;
+  margin: 0 auto;
+}
+.hui-pc .hui-header,
+.hui-pc .hui-footer {
+  left: 50%;
+  margin-left: -25em;
+  width: 50em;
+  font-size: 1em;
+}
+.hui-pc .s-main-frame2 {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+.hui-pc .m-module-content {
+  margin-left: auto;
+  margin-right: auto;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.hui-pc .hui-input-zone {
+  left: inherit;
+  width: 50em;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+.m-actions {
+  padding: 1.5em 1em 0;
+}
+.m-actions .hui-btn {
+  margin-bottom: 1em;
+}
+.m-action-btn {
+  margin-top: 2em;
+}
+.m-home-Home .m-module-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+.m-home-Home .hui-tab .hui-btn {
+  font-weight: normal;
+}
+.m-home-Home .home-content .hui-list-inner {
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+}
+.m-home-Home .hui-mlist .hui-list-container > div:nth-of-type(1) {
+  padding-top: 0.313em;
+}
+.m-home-Home .has-img .hui-hcard {
+  padding-left: 5.375em;
+}
+.m-home-Home .has-img .hui-content-title {
+  min-height: 2.313em;
+}
+.m-contact-Contact .m-module-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+.m-contact-Contact .hui-tab .hui-btn {
+  font-weight: normal;
+}
+.m-contact-Contact .contact-messages {
+  padding-top: 0.625em;
+}
+.m-settings-Settings .hui-form {
+  margin-left: auto;
+  margin-right: auto;
+}
+.m-message-ConversationList .hui-hcard-content {
+  height: 4.063em;
+}
+.m-message-GpConList .hui-hcard-content {
+  height: 4.063em;
+}
+.m-message-Conversation .m-module-content {
+  padding: 0;
+  position: absolute;
+  top: 2.75em;
+  bottom: 3.625em;
+  width: 100%;
+}
+.m-group-ApplyGroup .hui-input {
+  margin-bottom: 2em;
+}
+.m-group-ApplyGroup .hui-btn {
+  margin-bottom: 0;
+}
+.m-message-GpConversation .hui-hcard {
+  margin: 2em;
+  min-height: 4em;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding-bottom: 0.5em;
+}
+.m-topic-TopicDetail .topic-title {
+  border-bottom: 1px solid #ccc;
+}
+.m-topic-TopicDetail .topic-title .hui-content-title {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.m-topic-TopicDetail .topic-title .hui-link {
+  margin-left: 2em;
+}
+.m-topic-TopicDetail .topic-content {
+  margin: 1.5em 0;
+  line-height: 1.375em;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.m-topic-TopicDetail .topic-content .img-container img {
+  max-width: 100%;
+  min-width: 50%;
+}
+.m-topic-TopicDetail .topic-content .img-container {
+  text-align: center;
+  margin: 1em 0 2em 0;
+  line-height: 1em;
+}
+.m-topic-TopicDetail .topic-content .img-container span {
+  margin-top: 1em;
+  display: block;
+  font-size: 0.8em;
+  color: #6a6a6a;
+}
+.m-topic-TopicDetail .topic-content p {
+  margin: 1em 0;
+}
+.m-topic-TopicDetail .topic-content img {
+  max-width: 100%;
+}
+.topic-reply-list {
+  margin: 3em 0 2em;
+}
+.topic-reply-list .hui-list-inner {
+  padding: 0;
+}
+.topic-reply-list .hui-set-content {
+  margin: 0;
+}
+.m-topic-CommentView .hui-image {
+  position: absolute;
+  top: 0.313em;
+  left: 0.313em;
+}
+.hui-comment-quote .topic-reply-form {
+  background-color: #FFFEF4;
+}
+.hui-comment-quote .hui-list-item {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+.topic-reply-form {
+  padding: 0.8em 0.375em 0;
+  background-color: #fbfaf8;
+}
+.topic-reply-form .hui-btn {
+  float: right;
+  margin-top: 1em;
+}
+.m-topic-EditTopic .m-module-content {
+  padding-bottom: 0.5em;
+}
+.m-topic-EditTopic .content-field .hui-field-left {
+  top: 1.5em;
+  height: 1.5em;
+}
+.m-topic-EditTopic .editor-tips {
+  font-size: 0.8em;
+  color: #888;
+}
+.m-topic-EditTopic .edit-content .hui-input-txt {
+  visibility: hidden;
+}
+.m-activity-EditActivity .add-group .hui-label {
+  top: 1.813em;
+}
+.m-activity-EditActivity .add-group .hui-panel {
+  position: relative;
+  padding-right: 2.5em;
+  margin-bottom: 1em;
+}
+.m-activity-EditActivity .add-group .hui-panel .hui-select {
+  margin: 0;
+}
+.m-activity-EditActivity .add-group .hui-panel .del-btn {
+  position: absolute;
+  margin: 0;
+  right: 0;
+  top: 0.188em;
+}
+.m-activity-ActivityDetail .act-groups .hui-label {
+  top: 1.25em;
+}
+.m-activity-ActivityDetail .act-groups .hui-list-inner {
+  padding: 0;
+}
+.m-activity-ActivityDetail .act-groups .hui-list-empty {
+  padding: 0.75em 0.563em 0.75em 0.375em;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.m-user-UserView .hui-hcard-content {
+  min-height: 3.375em;
+}
+.m-message-NoticeView {
+  padding-top: 1em;
+}
+.m-message-NoticeView .hui-hcard {
+  padding: 0 0 1em 0;
+}
+.m-message-NoticeView .hui-content-title {
+  background: #eee;
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+}
+.m-message-NoticeView .hui-desc {
+  font-size: 0.813em;
+  padding: 0.313em;
+}
+.m-message-ActMsgView .hui-hcard {
+  padding-top: 1.5em;
+  padding-bottom: 2em;
+}
+body .ke-container {
+  border: none;
+  font-size: 16px;
+}
+.bsBox .bFind-wrapper-top {
+  -moz-box-sizing: content-box;
+  /*Firefox3.5+*/
+  -webkit-box-sizing: content-box;
+  /*Safari3.2+*/
+  -o-box-sizing: content-box;
+  /*Opera9.6*/
+  -ms-box-sizing: content-box;
+  /*IE8*/
+  box-sizing: content-box;
+  /*W3C标准(IE9+，Safari5.1+,Chrome10.0+,Opera10.6+都符合box-sizing的w3c标准语法)*/
+}

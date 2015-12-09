@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html class="hui-phonegap phonegap-init">
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<title>我的足球应用</title>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript">
+var oWin=window;
+oWin.gAppType='phonegap';
+oWin.gAppVersion='1.0';
+if(gAppVersion.indexOf('{%')===0){
+	gAppVersion='1.0';
+}
+oWin.gEnv='dev';
+if(gEnv.indexOf('{%')===0){
+	gEnv='dev';
+}
+oWin.gServer="{%=server%}";
+if(gServer.indexOf("{%")==0){
+	gServer='http://my.com:8080/';
+}
+oWin.gStaticServer="{%=staticServer%}";
+if(gStaticServer.indexOf("{%")==0){
+	gStaticServer='http://static.com/';
+}
+
+//线上环境使用本地初始化文件
+var sUrl='css/appinit.css';
+if(gEnv==='dev'){
+	//开发环境使用web资源
+	sUrl="http://static.com/static/sportappDev/css/appinit.css";
+}
+var oHead=document.head ||document.getElementsByTagName('head')[0] ||document.documentElement;
+var eCssNode=document.createElement("link");
+eCssNode.rel="stylesheet";
+eCssNode.href=sUrl;
+oHead.appendChild(eCssNode);
+
+sUrl="js/AppInit.js";
+if(gEnv==='dev'){
+	sUrl="http://static.com/static/sportappDev/js/AppInit.js";
+}
+var eScript=document.createElement("script");
+eScript.src=sUrl;
+eScript.type="text/javascript";
+oHead.appendChild(eScript);
+</script>
+</head>
+<body class="phonegap">
+</body>
+</html>

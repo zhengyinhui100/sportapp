@@ -1,0 +1,366 @@
+.phonegap-init {
+  height: 100%;
+  overflow: hidden;
+}
+.phonegap-init body {
+  height: 100%;
+  overflow: hidden;
+  background-color: #50d39a;
+  background-repeat: no-repeat;
+  background-size: 5em;
+  background-position: center 40%;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IuWbvuWxgl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjEwMHB4IiBoZWlnaHQ9IjEwMHB4IiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTAwIDEwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8Zz4NCgkJPHBhdGggZmlsbD0iI2ZmZiIgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik01NC45MjEsNzEuMTM2Yy0xMi44NTYtMy41NjYtMjIuMzI0LTEwLjMyMi0yNi4yMy0yMi44MDUNCgkJCWMtNC45MTgtMTUuNzE3LDcuNjUyLTI5LjYyNywyMi4zNjMtMjkuMzk2YzEuNDIxLTAuMDk3LDUuNTk5LDAuOTI3LDcuOTY3LDIuMjI5YzcuOTM4LDQuMzY0LDE1LjEzOSwxNS4zMjUsOS45NiwyNy40NQ0KCQkJYy0yLjAyLDQuNzI1LTUuMDE2LDYuMzEzLTguMjAyLDkuNjE4Yy0wLjQ5MywwLjI3NSwyLjg4MSw0LjIxNSwzLjUxNSw0LjgxMWMzLjUxMSwzLjI5Nyw4Ljc0Miw1LjUyMywxNS41NCw0LjgxNA0KCQkJYzYuNzE4LTguOTk4LDExLjU0NC0xOS42NDksOS44MTUtMzIuMDY2Yy0wLjI5OC0yLjg2LTIuNTQyLTEzLjc1LTEyLjQ0MS0yMy4zODZDNjkuNTk2LDQuNjgzLDU4LjAwMSwxLjQ3OCw1Mi45OCwxLjA0MQ0KCQkJYy0xLjE2OS0wLjEyOC0yLjMyOS0wLjE5Ni0zLjQ3OC0wLjIxMWMtMS4xNDksMC4wMTUtMi4zMDksMC4wODMtMy40NzksMC4yMTFjLTUuMDIxLDAuNDM3LTE2LjYxNywzLjY0My0yNC4yMjgsMTEuMzY0DQoJCQljLTkuOSw5LjYzNi0xMi4xNDYsMjAuNTI2LTEyLjQ0MSwyMy4zODZDNS44NTEsNjAuOTM3LDI5LjIxNyw3OC44NDcsNDAuNzg1LDkwLjQyOWMyLjgzNywyLjkxNCw1LjY3NSw1LjgyOCw4LjUxMyw4Ljc0Mg0KCQkJYzAuMDY3LTAuMDYxLDAuMTM2LTAuMTE5LDAuMjA0LTAuMThjMC4wNjgsMC4wNjEsMC4xMzgsMC4xMTksMC4yMDUsMC4xOGMyLjgzNy0yLjkxNCw1LjY3NS01LjgyOCw4LjUxMi04Ljc0Mg0KCQkJYzUuNzk1LTUuODAzLDE0LjU1LTEzLjE5MywyMS40MDUtMjIuMjg3Qzc0LjczNiw3MS43MDYsNjIuNDU3LDczLjIyOCw1NC45MjEsNzEuMTM2eiIvPg0KCTwvZz4NCjwvZz4NCjwvc3ZnPg0K');
+}
+.phonegap-init h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1em;
+  vertical-align: baseline;
+}
+.phonegap-init .hui-btn {
+  position: relative;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0.5em 0;
+  padding: 0.375em 1em;
+  min-width: 0.75em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #222;
+  zoom: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.phonegap-init .hui-btn:hover {
+  font-weight: bold;
+}
+.phonegap-init .hui-btn .hui-btn-ext {
+  color: #D10000;
+  font-weight: normal;
+}
+.phonegap-init .hui-btn-gray {
+  border: 1px solid #ccc;
+  background: #eee;
+  color: #555;
+  text-shadow: 0 1px 0 #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f1f1f1));
+  /* old webkit,Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(#ffffff, #f1f1f1);
+  /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(#ffffff, #f1f1f1);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(#ffffff, #f1f1f1);
+  /* IE10 */
+  background-image: -o-linear-gradient(#ffffff, #f1f1f1);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(#ffffff, #f1f1f1);
+}
+.phonegap-init .hui-btn-gray:hover {
+  border: 1px solid #bbb ;
+  background: #dfdfdf ;
+  color: #222 ;
+  text-shadow: 0 1px 0 #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#e0e0e0));
+  /* old webkit,Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(#f6f6f6, #e0e0e0);
+  /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(#f6f6f6, #e0e0e0);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(#f6f6f6, #e0e0e0);
+  /* IE10 */
+  background-image: -o-linear-gradient(#f6f6f6, #e0e0e0);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(#f6f6f6, #e0e0e0);
+}
+.phonegap-init .hui-btn-blue {
+  border: 1px solid #044062;
+  background: #396b9e;
+  color: #fff;
+  text-shadow: 0 1px 0 #194b7e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5f9cc5), to(#396b9e));
+  /* old webkit,Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(#5f9cc5, #396b9e);
+  /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(#5f9cc5, #396b9e);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(#5f9cc5, #396b9e);
+  /* IE10 */
+  background-image: -o-linear-gradient(#5f9cc5, #396b9e);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(#5f9cc5, #396b9e);
+}
+.phonegap-init .hui-btn-blue:hover {
+  border: 1px solid #00415e ;
+  background: #4b88b6;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 1px 0 #194b7e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6facd5), to(#4272a4));
+  /* old webkit,Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(#6facd5, #4272a4);
+  /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(#6facd5, #4272a4);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(#6facd5, #4272a4);
+  /* IE10 */
+  background-image: -o-linear-gradient(#6facd5, #4272a4);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(#6facd5, #4272a4);
+}
+.phonegap-init .hui-tab .hui-tabitem {
+  float: left;
+  /*
+			&:nth-of-type(1) .hui-btn-gray{
+				border-left-color:#ccc;
+			}
+			这里使用class会使跟.hui-tabitem的标签同名的标签也纳入计算范围，如：div，因此这里使用js添加class方式
+			&:nth-last-of-type(1) .hui-btn{
+				border-right-width:1px;
+			}
+			*/
+}
+.phonegap-init .hui-tab .hui-tabitem .hui-btn {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+.phonegap-init .hui-tab .hui-tabitem .hui-btn {
+  border-left-width: 0;
+  border-right-width: 0;
+}
+.phonegap-init .hui-tab .hui-tabitem.hui-item-first .hui-btn {
+  border-left-color: 1px;
+}
+.phonegap-init .hui-tab .hui-tabitem.hui-item-last .hui-btn {
+  border-right-width: 1px;
+}
+.phonegap-init .hui-tbar {
+  position: relative;
+  zoom: 1;
+  width: 100%;
+  min-height: 2em;
+  font-family: Helvetica, Arial, sans-serif;
+  background: #444;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 -1px 0 #000000;
+}
+.phonegap-init .hui-tbar .hui-tbar-title {
+  min-height: 1.063em;
+  text-align: center;
+  font-size: 1em;
+  display: block;
+  padding: 0.625em 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  outline: 0!important;
+}
+.phonegap-init .hui-tbar .hui-tbar-left,
+.phonegap-init .hui-tbar .hui-tbar-right {
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+.phonegap-init .hui-tbar .hui-tbar-left {
+  left: 0;
+}
+.phonegap-init .hui-tbar .hui-tbar-right {
+  right: 0;
+  text-align: right;
+}
+.phonegap-init .hui-tbar .hui-btn {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 0.1em;
+}
+.phonegap-init .hui-tbar .hui-btn-icon-notxt {
+  margin-left: 0.5em;
+  margin-top: 0.25em;
+}
+.phonegap-init .hui-tbar .hui-size-mini {
+  margin-top: 0.5em;
+}
+.phonegap-init .hui-tbar .hui-btn-back {
+  margin-left: 1.5em;
+}
+.phonegap-init .hui-tbar .hui-btn-adapt {
+  padding-top: 0.5em;
+  margin: 0;
+}
+.phonegap-init .hui-tbar .hui-tab {
+  margin: 0;
+}
+.phonegap-init .hui-tbar-gray {
+  border: 1px solid #bbb;
+  background: #bbb;
+  color: #333;
+  text-shadow: 0 1px 0 #eee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dddddd), to(#bbbbbb));
+  /* old webkit,Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(#dddddd, #bbbbbb);
+  /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(#dddddd, #bbbbbb);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(#dddddd, #bbbbbb);
+  /* IE10 */
+  background-image: -o-linear-gradient(#dddddd, #bbbbbb);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(#dddddd, #bbbbbb);
+}
+.phonegap-init .hui-popup {
+  position: absolute;
+  z-index: 1000;
+  -webkit-transform: translateZ(0);
+}
+.phonegap-init .hui-dialog {
+  width: 15em;
+  max-width: 31.25em;
+  padding: 0;
+  top: -31.25em;
+  z-index: 1000;
+  overflow: hidden;
+}
+.phonegap-init .hui-dialog .hui-dialog-header {
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.phonegap-init .hui-dialog .hui-dialog-body {
+  color: #333;
+  text-shadow: 0 1px 0 #fff;
+  background: #f9f9f9;
+  display: block;
+  position: relative;
+  width: auto;
+  margin: 0;
+  border-width: 0;
+  overflow: visible;
+  overflow-x: hidden;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#eeeeee));
+  /* old webkit,Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(#f9f9f9, #eeeeee);
+  /* Chrome 10+, Saf5.1+ */
+  background-image: -moz-linear-gradient(#f9f9f9, #eeeeee);
+  /* FF3.6 */
+  background-image: -ms-linear-gradient(#f9f9f9, #eeeeee);
+  /* IE10 */
+  background-image: -o-linear-gradient(#f9f9f9, #eeeeee);
+  /* Opera 11.10+ */
+  background-image: linear-gradient(#f9f9f9, #eeeeee);
+}
+.phonegap-init .hui-dialog .hui-body-content {
+  padding: 0.938em;
+}
+.phonegap-init .hui-dialog .hui-body-action {
+  border-top: 1px solid #ccc;
+}
+.phonegap-init .hui-dialog .hui-body-action .hui-btn {
+  border: none;
+}
+.phonegap-init .hui-dialog .hui-content-title {
+  font-size: 1em;
+  font-weight: bold;
+}
+.phonegap-init .hui-dialog .hui-content-msg {
+  margin: 0.625em 0 0.625em 0;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.phonegap-init .hui-border {
+  border: 1px solid #eee;
+}
+.phonegap-init .hui-inline {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.phonegap-init .hui-hidden {
+  display: none;
+}
+.phonegap-init .hui-unvisible {
+  visibility: hidden;
+}
+.phonegap-init .hui-radius-little {
+  -webkit-border-radius: 0.188em;
+  -moz-border-radius: 0.188em;
+  border-radius: 0.188em;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+.phonegap-init .hui-radius-normal {
+  -webkit-border-radius: 0.375em;
+  -moz-border-radius: 0.375em;
+  border-radius: 0.375em;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+.phonegap-init .hui-radius-big {
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+.phonegap-init .hui-shadow {
+  -webkit-box-shadow: 0 1px 0.188em rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 0.188em rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 0.188em rgba(0, 0, 0, 0.2);
+}
+.phonegap-init .hui-shadow-inset {
+  -webkit-box-shadow: inset 0 1px 0.25em rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 1px 0.25em rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 0.25em rgba(0, 0, 0, 0.2);
+}
+.phonegap-init .hui-shadow-overlay {
+  -webkit-box-shadow: 0 0em 0.75em rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0em 0.75em rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0em 0.75em rgba(0, 0, 0, 0.6);
+}
+.phonegap-init .hui-shadow-surround {
+  -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.3),inset 0 1px 0 rgba(255,255,255,.3);
+  -moz-box-shadow: 0 1px 0 rgba(255,255,255,.3),inset 0 1px 0 rgba(255,255,255,.3);
+  box-shadow: 0 1px 0 rgba(255,255,255,.3),inset 0 1px 0 rgba(255,255,255,.3);
+}
+.phonegap-init .hui-focus {
+  -webkit-box-shadow: 0 0 0.75em #387bbe;
+  -moz-box-shadow: 0 0 0.75em #387bbe;
+  box-shadow: 0 0 0.75em #387bbe;
+}
+.phonegap-init .hui-disable {
+  cursor: default!important;
+  pointer-events: none;
+  zoom: 1;
+  filter: alpha(opacity= 30 );
+  opacity: 0.3;
+  z-index: 1;
+}
+.phonegap-init .hui-size-normal {
+  font-size: 1.34em;
+}
+.phonegap-init .hui-size-mini {
+  font-size: 0.75em;
+}
+.phonegap-init .hui-size-mini.hui-btn {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+.phonegap-init .hui-size-mini.hui-icon,
+.phonegap-init .hui-size-mini .hui-icon {
+  width: 1.125em;
+  height: 1.125em;
+}
+.phonegap-init .hui-light {
+  filter: alpha(opacity= 50 );
+  opacity: 0.5;
+}

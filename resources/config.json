@@ -1,0 +1,41 @@
+{
+    "dev": {
+    	"environment":"dev",
+        "appPkg":"com.hui.sportapp.dev",
+		"appName":"乐加球友dev",
+		"srcDir":"com/hui/sportapp/dev",
+		"wxAppId":"wx5332308c6d71c7cc",
+		"wxAppSecret":"70ce130ed93393faf9e04c0b821af567",
+		"appVersion":"1.0"
+    },
+    "test":{
+    	"environment":"test",
+    	"appPkg":"com.hui.sportapp.test",
+		"appName":"乐加球友test",
+		"srcDir":"com/hui/sportapp/test",
+		"wxAppId":"wx79c3e76d2169b89a",
+		"wxAppSecret":"21477225fd8c969f73fe2597e3d55cb4",
+		"server":"http://115.28.151.237:8080/",
+		"staticServer":"http://115.28.151.237/",
+		"handyStaticPath":"{%=staticServer%}static/{%=staticVersion%}/handy/",
+		"projectStaticPath":"{%=staticServer%}static/{%=staticVersion%}/sportapp/",
+		"environment":"test",
+		"appVersion":"1.0",
+		"appSize":"4.8M"
+    },
+    "online":{
+    	"environment":"online",
+    	"appPkg":"com.hui.sportapp",
+		"appName":"乐加球友",
+		"srcDir":"com/hui/sportapp",
+		"wxAppId":"wxe707e5ff11fb1fd7",
+		"wxAppSecret":"3ba222452e8c9853c743ac2fb5a795a2",
+		"server":"http://www.17lejia.com/",
+		"staticServer":"http://www.handy-ui.com/",
+		"handyStaticPath":"{%=staticServer%}static/{%=staticVersion%}/handy/",
+		"projectStaticPath":"{%=staticServer%}static/{%=staticVersion%}/sportapp/",
+		"environment":"online",
+		"appVersion":"1.0",
+		"appSize":"4.8M"
+    }
+}

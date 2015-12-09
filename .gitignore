@@ -1,0 +1,10 @@
+.DS_Store
+.ftppass
+.DS_Store
+.svn*
+node_modules/*
+plugins/*
+cordova/*
+platforms/*
+# build/*会导致后面的失效，应该是新版github的bug
+build/**/**

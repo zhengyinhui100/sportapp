@@ -1,0 +1,371 @@
+//框架css
+
+//在当前目录下建立虚拟文件指向handy对应less文件
+@import (reference) "function";
+@import (reference) "common";
+
+.page-bg{
+	background:#5A5A5A;
+	background-size:cover;
+}
+.s-main-frame{
+	position:relative;
+	min-height:100%;
+	//解决父元素使用-webkit-overflow-scrolling: touch;时顶部工具栏随滚动消失的问题
+	//-webkit-transform: translate3d(0, 0, 0);
+}
+.m-module{
+    background:#fff;
+	min-height:100%;
+}
+.m-module-gray{
+	background-color:#eee;
+}
+.m-module-content{
+	padding-top:2.75em;
+	&.m-padding-we{
+		padding-left:0.5em;
+		padding-right:0.5em;
+	}
+	&.m-padding-top{
+		padding-top:3.125em;
+	}
+	&.m-padding-bottom{
+		padding-bottom:2em;
+	}
+	&.m-padding-both{
+		padding-left:0.625em;
+		padding-right:0.625em;
+		padding-top:3.125em;
+		padding-bottom:2em;
+	}
+	&.m-padding-ns{
+		padding-top:3.5em;
+		padding-bottom:2em;
+		padding-left:0;
+		padding-right:0;
+	}
+	&.m-padding-ns-more{
+		padding-top:4.625em;
+		padding-bottom:2em;
+	}
+	&.m-padding-both-more{
+		padding-top:4.625em;
+		padding-bottom:2em;
+		padding-left:0.5em;
+		padding-right:0.5em;
+	}
+}
+.has-footer{
+	.m-module-content{
+		padding-bottom:2.875em;
+		&.m-padding-bottom{
+			padding-bottom:4.875em;
+		}
+		&.m-padding-both{
+			padding-bottom:4.875em;
+		}
+	}
+}
+.hui-ios .m-module-content{
+	-webkit-overflow-scrolling:touch;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+.main-footer-tbar{
+	.hui-tab{
+		font-size:0.813em;
+	}
+}
+//适配pc
+.hui-pc{
+	&.main{
+		width:50em;
+		margin:0 auto;
+	}
+	.hui-header,.hui-footer{
+		left:50%;
+		margin-left:-25em;
+		width:50em;
+		font-size:1em;
+	}
+	.s-main-frame2{
+		margin:0 auto;
+		overflow-x:hidden;
+	}
+	.m-module-content{
+		margin-left:auto;
+		margin-right:auto;
+		//TODO 临时参考线
+		border-left:1px solid #ccc;
+		border-right:1px solid #ccc;
+	}
+	.hui-input-zone{
+		left:inherit;
+		width:50em;
+		border-left:1px solid #ccc;
+		border-right:1px solid #ccc;
+	}
+}
+.m-actions{
+	padding:1.5em 1em 0;
+	.hui-btn{
+		margin-bottom:1em;
+	}
+}
+.m-action-btn{
+	margin-top:2em;
+}
+
+//首页
+.m-home-Home{
+	.m-module-content{
+		padding-left:0;
+		padding-right:0;
+	}
+	.hui-tab .hui-btn{
+		font-weight:normal;
+	}
+	.home-content .hui-list-inner{
+		padding-left:0.25em;
+		padding-right:0.25em;
+	}
+	.hui-mlist .hui-list-container{
+		>div:nth-of-type(1){
+			padding-top:0.313em;
+		}
+	}
+	.has-img{
+		.hui-hcard{
+			padding-left:5.375em;
+		}
+		.hui-content-title{
+			min-height:2.313em;
+		}
+	}
+}
+
+//联系人
+.m-contact-Contact{
+	.m-module-content{
+		padding-left:0;
+		padding-right:0;
+	}
+	.hui-tab .hui-btn{
+		font-weight:normal;
+	}
+	.contact-messages{
+		padding-top:0.625em;
+	}
+}
+
+//设置
+.m-settings-Settings{
+	.hui-form{
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+
+//私信列表
+.m-message-ConversationList{
+	.hui-hcard-content{
+		height:4.063em;
+	}
+}
+//群消息列表
+.m-message-GpConList{
+	.hui-hcard-content{
+		height:4.063em;
+	}
+}
+//私信，移动端弹出软键盘需要自适应高度
+.m-message-Conversation{
+	.m-module-content{
+		padding:0;
+		position:absolute;
+		top:2.75em;
+		bottom:3.625em;
+		width:100%;
+	}
+}
+
+//申请入群
+.m-group-ApplyGroup{
+	.hui-input{
+		margin-bottom:2em;
+	}
+	.hui-btn{
+		margin-bottom:0;
+	}
+}
+
+//群消息
+.m-message-GpConversation{
+	.hui-hcard{
+		margin:2em;
+		min-height:4em;
+		background:#fff;
+		border:1px solid #ccc;
+		padding-bottom:0.5em;
+	}
+}
+//话题
+.m-topic-TopicDetail{
+	.topic-title{
+		border-bottom:1px solid #ccc;
+		.hui-content-title{
+			font-weight:bold;
+			font-size:1.2em;
+		}
+		.hui-link{
+			margin-left:2em;
+		}
+	} 
+	.topic-content{
+		margin:1.5em 0;
+		line-height:1.375em;
+		.fn_word_break();
+		.img-container img{
+			max-width:100%;
+			min-width:50%;
+		}
+		.img-container{
+			text-align:center;
+			margin:1em 0 2em 0;
+			line-height:1em;
+			span{
+				margin-top:1em;
+				display:block;
+				font-size:0.8em;
+				color:#6a6a6a;
+			}
+		}
+		p{
+			margin:1em 0;
+		}
+		img{
+			max-width:100%;
+		}
+	}
+}
+.topic-reply-list{
+	margin:3em 0 2em;
+	.hui-list-inner{
+		padding:0;
+	}
+	.hui-set-content{
+		margin:0;
+	}
+}
+//话题评论
+.m-topic-CommentView .hui-image{
+	position:absolute;
+	top:0.313em;
+	left:0.313em;
+}
+.hui-comment-quote{
+	.topic-reply-form{
+		background-color:#FFFEF4;
+	}
+	.hui-list-item{
+		padding-top:0;
+		padding-bottom:0;
+		border-bottom:0;
+	}
+}
+.topic-reply-form{
+	padding:0.8em 0.375em 0;
+	background-color:#fbfaf8;
+	.hui-btn{
+		float:right;
+		margin-top:1em;
+	}
+}
+//编辑话题
+.m-topic-EditTopic{
+	.m-module-content{
+		padding-bottom:0.5em;
+	}
+	.content-field{
+		.hui-field-left{
+			top:1.5em;
+			height:1.5em;
+		}
+	}
+	.editor-tips{
+		font-size:0.8em;
+		color:#888;
+	}
+	.edit-content .hui-input-txt{
+		visibility:hidden;
+	}
+}
+//编辑活动
+.m-activity-EditActivity{
+	.add-group{
+		.hui-label{
+			top:1.813em;
+		}
+		.hui-panel{
+			position:relative;
+			padding-right:2.5em;
+			margin-bottom:1em;
+			.hui-select{
+				margin:0;
+			}
+			.del-btn{
+				position:absolute;
+				margin:0;
+				right:0;
+				top:0.188em;
+			}
+		}
+	}
+}
+.m-activity-ActivityDetail{
+	.act-groups{
+		.hui-label{
+			top:1.25em;
+		}
+		.hui-list-inner{
+			padding:0;
+		}
+		.hui-list-empty{
+			padding:0.75em 0.563em 0.75em 0.375em;
+			text-align:left;
+			border-bottom: 1px solid #ddd;
+		}
+	}
+}
+.m-user-UserView .hui-hcard-content{
+	min-height:3.375em;
+}
+.m-message-NoticeView{
+	padding-top:1em;
+	.hui-hcard{
+		padding:0 0 1em 0;
+	}
+	.hui-content-title{
+		background:#eee;
+		padding:0.5em;
+		margin-bottom:0.5em;
+	}
+	.hui-desc{
+		font-size:0.813em;
+		padding:0.313em;
+	}
+}
+.m-message-ActMsgView{
+	.hui-hcard{
+		padding-top:1.5em;
+		padding-bottom:2em;
+	}
+}
+body .ke-container{
+	border:none;
+	font-size:16px;
+}
+.bsBox .bFind-wrapper-top{
+	.fn_box_sizing(content-box);
+}

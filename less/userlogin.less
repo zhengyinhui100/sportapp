@@ -1,0 +1,206 @@
+//登录注册相关页面less
+
+//在当前目录下建立虚拟文件指向handy对应less文件
+@import (reference) "function";
+@import (reference) "common";
+
+.index-page{
+	width:100%;
+	overflow:hidden;
+	.hui-tips{
+		position:relative;
+		margin:0 auto 0.375em auto;
+		.fn_inline_block();
+		.hui-tips-txt{
+			font-size:0.8em;
+		}
+	}
+	.hui-hidden{
+		display:none;
+	}
+	.register-content .hui-field{
+		padding-left:5em;
+	}
+	.auto-login{
+		height:1.375em;
+		line-height:1.375em;
+		.hui-icon{
+			vertical-align:bottom;
+		}
+	}
+	.hui-form-action{
+		padding-left:0;
+	}
+}
+//网页版
+.hui-web{
+	.index-page{
+		background:#ededeb;
+	}
+	.index-page-header{
+		position:fixed;
+		z-index:1;
+		top:0;
+		left:0;
+		width:100%;
+		background:#fff;
+		border-bottom:1px solid #ededeb;
+	}
+	.header-container{
+		padding:1em;
+		max-width:50em;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.logo-container{
+		margin-right:1em;
+	}
+	.header-lnk{
+		height:2.5em;
+		line-height:2.5em;
+		margin-left:1.5em;
+		text-decoration:none;
+		font-weight:700;
+		color:#555;
+	}
+	.lnk-active{
+		color:green;
+	}
+	.index-page-content{
+		max-width:50em;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:5em;
+		margin-bottom:5em;
+	}
+	.login-intro{
+		margin:2em auto;
+		color:#666;
+	}
+	.login-intro-txt{
+		text-align:left;
+		line-height:1.875em;
+		width: 100%;
+		.fn_word_break();		
+	}
+	.hui-btn-ext-txt{
+		font-weight:normal;
+		font-size:0.813em;
+	}
+	.app-download-ecode{
+		width:100%;
+		margin-top:1em;
+	}
+	.web-tips{
+		line-height:2.5em;
+		color:#666;
+		text-align:left;
+	}
+	&.hui-pc,&.hui-tablet{
+		.login-intro{
+			float:right;
+			width:35%;
+			padding:0 3%;
+		}
+		.login-register{
+			float:left;
+			width:65%;
+			padding-left:3%;
+			margin-top:2.25em;
+		}
+		.login-register-form{
+			min-height:32em;
+			padding-left:1.5em;
+		}
+		.login-content,.register-content{
+			width:18em;
+			margin-left:auto;
+			margin-right:auto;
+		}
+	}
+	&.hui-phone{
+		.index-page-content{
+			padding:0 10%;
+		}
+	}
+	//移动web版滚动后，提示可能被遮住，这里定制下样式
+	&.hui-mobile .hui-form-tips{	
+		position:fixed;
+		top:5em;
+		background:#fff;
+		z-index:900;
+		padding:0.5em;
+		display:none;
+	}
+}
+//app版
+.hui-phonegap{
+	.index-page{
+		background:#50d39a;
+		position:absolute;
+		height:100%;
+	}
+	.login-register-container,.login-register{
+		width:15em;
+	}
+	.login-register{
+		margin-top:-15em;
+	}
+	.login-register .hui-icon-logo{
+		width:5em;
+		height:5em;
+		background-size: contain;
+		margin-bottom:2em;
+	}
+}
+.logo-container{
+	float:left;
+	.logo-icon{
+		float:left;
+		margin-right:0.5em;
+		width:2.5em;
+		height:2.5em;
+		background:url('../img/logo-40.png');
+		background-size:contain;
+	}
+	.logo-txt{
+		float:left;
+	}
+	.logo-title{
+		font-weight:700;
+		text-align:left;
+		color:#666;
+		margin:0.125em 0;
+	}
+	.logo-url{
+		color:#888;
+		font-size:0.875em;
+	}
+}
+.login-register-form{
+	background-color:#fff;
+	.fn_border_radius(0.3em);
+	padding:1em 1.375em 1em 0.375em;
+	.hui-form-action{
+		.hui-btn-green,.hui-btn-blue{
+			margin-left:1em;
+			margin-right:3em;
+		}
+	}
+}
+
+//关于我们
+.about-us-page{
+	min-height:20em;
+	padding:2em;
+	.about-us-title{
+		font-weight:700;
+		font-size:1.25em;
+		color:#555;
+	}
+	.about-us-desc{
+		margin:2em 0;
+		color:#888;
+		line-height:2em;
+	}
+}
