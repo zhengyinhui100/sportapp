@@ -238,13 +238,13 @@
 	function fInitViewport() {
 		oWin.gZoom=1;
 		oWin.gFontSize=16;
+		console.log(document.documentElement.getBoundingClientRect().width)
 		if(bIsMobile){
-			var eHead=document.head ||document.getElementsByTagName('head')[0] ||document.documentElement;
 			var _fAddMeta=function(sName,sContent){
 				var oMeta = document.createElement('meta');
 				oMeta.setAttribute('name', sName);
 				oMeta.setAttribute('content',sContent);
-				eHead.appendChild(oMeta);
+				_eHead.appendChild(oMeta);
 			}
 			var sViewPort='user-scalable=no';
 			//Android浏览器中添加了initial-scale、width等属性后宽度会变成viewport一般宽度344，
@@ -255,6 +255,7 @@
 				//web中加上无法显示最高分辨率
 				sViewPort+=',initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width,height=device-height,target-densitydpi=device-dpi';
 			}
+			var sViewPort='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no';
 			_fAddMeta('viewport',sViewPort);
 			//IOS不检测电话号码
 			_fAddMeta('format-detection','telephone=no');
@@ -278,7 +279,7 @@
 					var oLink=document.createElement('link');
 					oLink.rel="apple-touch-icon-precomposed";
 					oLink.href=gSportAppUrl+"img/logo.png";
-					eHead.appendChild(oLink);
+					_eHead.appendChild(oLink);
 					/**
 					 * <link rel="apple-touch-icon" href="touch-icon-iphone.png" />
 					 * <link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad.png" />
